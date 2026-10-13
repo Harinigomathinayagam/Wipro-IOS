@@ -1,0 +1,15 @@
+//operators
+An operator is a symbol or keyword that performs an operation on one or more values.
+Example:
++ adds values.
+- subtracts values.
+* multiplies values.
+== checks whether two values are equal.
+&& checks whether two conditions are true.
+//Expression
+An expression is a combination of values, variables, operators, and sometimes function calls that produces a result.
+Example:
+let result = 10 + 5
+print(result)
+
+Output:15
