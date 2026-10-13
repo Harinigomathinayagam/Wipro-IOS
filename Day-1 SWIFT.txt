@@ -1,0 +1,27 @@
+//Day-1
+//VARIABLES
+
+1. var – Variable
+- Used to declare a variable whose value can be changed.
+- Use it when the data may change during program execution.
+
+Example:
+
+var age = 20
+age = 21
+print(age)
+
+Output:
+21
+
+2.let – Constant
+- Used to declare a constant whose value cannot be changed after initialization.
+- Use it when the value should remain fixed.
+
+Example:
+let college = "Karpagam"
+college = "KIT"
+print(college)
+
+Output:
+Karpagam
