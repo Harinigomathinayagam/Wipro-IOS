@@ -25,3 +25,9 @@ print(college)
 
 Output:
 Karpagam
+
+//Basic Data Type :
+-Int - Whole number [Example:var age: Int = 20]
+-Double - Decimal number[Example:var price: Double = 99.5]
+-Bool - True or false	[Example: var Passed: Bool = true]
+-string - Text [ Example: var name: String = "Alice" ]
