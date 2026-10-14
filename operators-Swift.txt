@@ -22,7 +22,14 @@ Operator	Equivalent expression
 /=	a = a / b
 //Nil-coalescing operator — ??
 Provides a default value when an optional value is nil.
+Example:
 let name: String? = nil
 let displayName = name ?? "Guest"
-
 print(displayName)
+
+//Ternary operator — ? :
+A short form of choosing between two values based on a condition.
+Example:
+let marks = 80
+let result = marks >= 50 ? "Pass" : "Fail"
+print(result)
