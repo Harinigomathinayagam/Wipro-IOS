@@ -13,3 +13,16 @@ let result = 10 + 5
 print(result)
 
 Output:15
+//Compound assignment operators
+These perform a calculation and update the existing variable.
+Operator	Equivalent expression
++=	a = a + b
+-=	a = a - b
+*=	a = a * b
+/=	a = a / b
+//Nil-coalescing operator — ??
+Provides a default value when an optional value is nil.
+let name: String? = nil
+let displayName = name ?? "Guest"
+
+print(displayName)
