@@ -1,0 +1,27 @@
+Numbers
+Variables are containers that hold data values. They are used to store, manipulate, and display information within a program.
+In short, a variable is like a memory unit that we can access by typing the name of the variable.
+Each variable has a unique name and a value that can be of different types. Swift is a type-safe language, meaning it's strict about the types of values your variables can hold.
+To initialize a variable or constant, we use the following format:
+let constantName = value
+var variableName = value
+//Basic Code
+Example:
+let myVar = 5
+print("myVar = \(myVar)")
+output:
+myVar = 5
+
+String
+A Character is a single character (for example: 1, 6, %, b, p, ., T, etc.)
+The String type is a special type that consists of multiple Characters.
+To initialize a string value in a variable, enclose it within double quotation marks:
+let s1 = "This is a string"
+let s2 = "This is also a string"
+// Basic Example:
+let coddy = "I am learning to code with Coddy!"
+print("coddy = \"\(coddy)\"")
+ output:
+coddy = I am learning to code with CoddyI
+
+
