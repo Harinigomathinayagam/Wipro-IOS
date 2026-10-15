@@ -1,0 +1,35 @@
+//Swift Collection
+Swift Collections are an important part of Swift Fundamentals. They help us store, organize, access, and manipulate multiple values in a single variable or constant.
+1. Array in Swift
+An Array is an ordered collection of values of the same type. Each element has a position called an index.
+For example:
+["Harini", "Priya", "Divya"]
+The index starts at 0, not 1
+=>Creating an Array
+	var names: [String] = ["Harini", "Priya", "Divya"]
+	print(names)
+Output:
+["Harini", "Priya", "Divya"]
+=>Accessing Array Elements
+Use the index to access a particular element.
+	let fruits = ["Apple", "Mango", "Orange"]
+	print(fruits[0])
+	print(fruits[1])
+	print(fruits[2])
+output:
+Apple
+Mango
+Orange
+=>Adding Elements
+  Use append() to add an element to the end of an array
+	var fruits = ["Apple", "Mango"]
+	fruits.append("Orange")
+	print(fruits)
+output:
+["Apple", "Mango", "Orange"]
+To add multiple elements at once, use append(contentsOf:)
+	var numbers = [1, 2, 3]
+	numbers.append(contentsOf: [4, 5, 6])
+	print(numbers)
+output:
+[1, 2, 3, 4, 5, 6]
