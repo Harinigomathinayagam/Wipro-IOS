@@ -1,0 +1,35 @@
+=>Add Two Numbers
+
+let a = 10
+let b = 20
+let sum = a+b
+print("Sum:\(sum)")
+
+//Output:
+30
+=>Print the squares
+
+print("Enter a number:")
+if let input = readLine(),
+       let number = Int(input){
+	  let square = number*number
+          print("Square is:\(square)")
+}else{
+      print("Invalid input")
+}
+
+//Output:
+Enter a number:
+5
+Square is:25
+
+=>Reverse a string
+print("Enter a string")
+if let input = readLine(){
+   let reversed = String(input.reversed())
+       print("Reversed String is:\(reversed)")
+}
+
+//Output:
+Enter a string:Hello
+Reversed String is:olleH
