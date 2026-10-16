@@ -1,0 +1,251 @@
+
+
+=>To insert an element at a specific position, use insert(_:at:)`.
+
+var numbers = [10, 20, 40]
+
+numbers.insert(30, at: 2)
+
+print(numbers)
+
+Output:
+
+[10, 20, 30, 40]
+
+
+=> Updating an Element
+
+Assign a new value to an existing index.
+
+var marks = [80, 75, 90]
+
+marks[1] = 85
+
+print(marks)
+
+Output:
+
+[80, 85, 90]
+
+=> Removing Elements
+
+Swift provides several methods for removing elements.
+var fruits = ["Apple", "Mango", "Orange", "Grapes"]
+fruits.remove(at: 1)
+print(fruits)
+fruits.removeLast()
+print(fruits)
+
+Output:
+["Apple", "Orange", "Grapes"]
+["Apple", "Orange"]
+
+=>Other useful methods include:
+
+- removeFirst() — removes the first element.
+- removeAll() — removes all elements.
+- remove(at:) — removes the element at a specified index.
+
+=> Finding the Length of an Array
+
+Use the 'count' property to find the number of elements.
+let numbers = [10, 20, 30, 40]
+print(numbers.count)
+
+Output:
+4
+
+=>Check whether an array is empty using 'isEmpty'.
+let names: [String] = []
+print(names.isEmpty)
+
+Output:
+true
+
+=> Looping Through an Array
+
+A 'for-in'loop processes every element in the array.
+let names = ["Harini", "Priya", "Divya"]
+for name in names {
+    print(name)
+}
+
+Output:
+Harini
+Priya
+Divya
+=>To access both the index and the element, use `enumerated()`.
+let subjects = ["Swift", "Python", "Java"]
+
+for (index, subject) in subjects.enumerated() {
+    print("\(index): \(subject)")
+}
+
+Output:
+0: Swift
+1: Python
+2: Java
+
+=>useful Array Operations
+
+let numbers = [5, 2, 8, 1, 4]
+print(numbers.contains(8))
+print(numbers.first ?? 0)
+print(numbers.last ?? 0)
+print(numbers.sorted())
+print(numbers.reversed())
+
+The original array remains unchanged when you use `sorted()` or `reversed()` in this way.
+
+=>set in swift
+
+A Set is a collection that stores unique values of the same type. Unlike an array, a set does not preserve a guaranteed element order.
+
+For example, consider these values:
+[10, 20, 10, 30, 20]
+
+If you store them in a set, duplicates are removed automatically.
+
+ =>creating a set
+
+var numbers: Set<Int> = [10, 20, 10, 30, 20]
+print(numbers)
+
+Important: Unlike an array, a set cannot be accessed using an index such as `numbers[0]`.
+
+=>Adding Elements to a set
+
+Use `insert()` to add a value.
+var colors: Set<String> = ["Red", "Blue"]
+colors.insert("Green")
+colors.insert("Red")
+print(colors.count)
+
+Output:
+3
+
+=>Removing Elements from a Set
+
+Use `remove()` to remove a particular value.
+
+
+var colors: Set<String> = ["Red", "Blue", "Green"]
+colors.remove("Blue")
+print(colors.contains("Blue"))
+print(colors.count)
+
+Output:
+false
+2
+
+The `contains()` method checks whether a value exists in the set.
+
+=>Looping Through a set
+
+let languages: Set<String> = ["Swift", "Python", "Java"]
+
+for language in languages {
+    print(language)
+}
+
+Output: the three language names are printed, but their order may vary.
+
+for language in languages.sorted() {
+    print(language)
+}
+Output:
+Java
+Python
+Swift
+
+=>Set Operations
+
+One of the most useful features of sets is their ability to compare groups of values.
+
+Consider these two sets:
+let A: Set<Int> = [1, 2, 3, 4]
+let B: Set<Int> = [3, 4, 5, 6]
+
+=>set operations
+
+//Union — `union()`
+
+Combines elements from both sets without duplicates.
+
+Result: 6
+
+//Intersection — `intersection()`
+
+Returns only the elements common to both sets.
+
+Result: 4
+//Subtracting — `subtracting()`
+
+Returns elements in the first set that are not in the second.
+
+A.subtracting(B) gives 2
+
+//Symmetric difference — `symmetricDifference()`
+
+Returns elements present in either set, but not in both.
+
+Result: 6
+
+Complete example:
+let A: Set<Int> = [1, 2, 3, 4]
+let B: Set<Int> = [3, 4, 5, 6]
+print(A.union(B).sorted())
+print(A.intersection(B).sorted())
+print(A.subtracting(B).sorted())
+print(A.symmetricDifference(B).sorted())
+Output:
+[1, 2, 3, 4, 5, 6]
+[3, 4]
+[1, 2]
+[1, 2, 5, 6]
+
+
+=>Checking Relationships Between Sets
+
+Swift also supports checking relationships between sets.
+
+let A: Set<Int> = [1, 2]
+let B: Set<Int> = [1, 2, 3, 4]
+let C: Set<Int> = [7, 8]
+
+print(A.isSubset(of: B))
+print(B.isSuperset(of: A))
+print(A.isDisjoint(with: C))
+Output:
+true
+true
+true
+
+- `isSubset(of:)` checks whether every element of one set exists in another.
+- `isSuperset(of:)` checks whether a set contains all elements of another.
+- `isDisjoint(with:)` checks whether two sets have no common elements.
+=> Dictionary in Swift
+
+A Dictionary stores data as key-value pairs. Each key is unique and is used to retrieve its associated value.
+
+For example, imagine storing each student's name with their mark.
+
+Example dictionary
+
+"Harini"
+
+95
+
+"Priya"
+
+88
+
+Keys are the student names; values are the marks.
+
+//creating a Dictionary
+var marks: [String: Int] = [
+    "Harini": 95,
+    "Priya": 88,
+    "Divya": 92
+]
+print(marks)
