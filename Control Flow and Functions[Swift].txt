@@ -1,0 +1,46 @@
+=>Control Flow 
+//If-Else:
+Example-
+if age>=18{
+   print("Adult")
+}else{
+   print("Minor)
+}
+//Switch
+Example:
+Switch day{
+   case 1:print("Monday")
+   case 2:print("Tuesday")
+   default:print("Others")
+}
+//Loops
+Example:
+for i in 1..5{
+    print(i)
+}
+
+While count<5{
+      print(count)
+      count+=1
+}
+=>Functions
+A function is a block of code that perform a task.
+//Syntax
+func greet(name:String){
+     print("Hello ,\(name)!")
+}
+greet(name:"Swift") 
+Output:
+Hello,Swift!
+//With return value
+Example:
+func add(a:Int,b:Int)->Int{
+     return a+b
+}
+print(add(5,3))
+Output:
+8
+Types:
+*No parameters,no return value
+*Parameters,no return value
+*Parameters , with return value
