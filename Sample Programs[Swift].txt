@@ -1,0 +1,28 @@
+=>Check Even or Odd
+print("Enter a number:")
+if let input = readLine(),
+   let number = Int(input){
+     if number % 2 == 0{
+        print("\(number) is Even")
+    } else {
+        print("\(number) is Odd")
+    }
+} else {
+  print("Invalid input")
+}
+
+=> Factorial of a Number
+print("Enter a number:")
+if let input = readLine(),let n = Int(input){
+	var fact = 1
+	if n < 0 {
+	   print("Factorial is not defined for negative numbers")
+        }else{
+           for i in 1 ...n{
+               fact*=i
+           }
+           print("Factorial of \(n) is \(fact)")
+       }
+}else{
+    print("Invalid input")
+}
