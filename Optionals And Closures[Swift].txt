@@ -1,0 +1,32 @@
+//Optionals And Closures
+*optional means a value can be nil
+*A clouser is a block of code that can be passed and used later
+
+Example for Optionals:
+var name:String? = "Apple"
+print(name?? "Unknown")
+=>Optional Binding
+if let name = name{
+       print(name)
+}else{
+      print("No name")
+}
+=>Force unwrapping
+print(name!)
+
+
+Example for closures:
+=>SYNTAX:
+{(parameter)->returnType in
+	//Code
+}
+=>example code
+let square = {(num:Int)->Int in 
+     return num*num
+}
+print(square(S)) Output:25
+
+//Common Uses of Closure:
+*Completion handlers
+*Event handling
+*Functional programming
